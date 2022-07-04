@@ -1,0 +1,42 @@
+.root {
+  width: 280px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  // box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+  border-radius: 40px;
+  padding: 6px;
+  border: 1px solid #ffd9ca;
+  
+  li {
+    display: inline-block;
+
+    a {
+      text-align: center;
+      width: 42px;
+      line-height: 42px;
+      height: 42px;
+      border: 1px solid #ffffff;
+      border-radius: 30px;
+      margin: 0 5px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-block;
+      color: #fe5f1e;
+      transition: all 0.15s ease-in-out;
+
+      &:hover {
+        border: 1px solid #fe5f1e;
+      }
+    }
+  }
+
+  :global {
+    .selected {
+      a {
+        background-color: #fe5f1e;
+        color: #fff;
+      }
+    }
+  }
+}

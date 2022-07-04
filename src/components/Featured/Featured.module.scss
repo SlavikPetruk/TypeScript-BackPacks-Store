@@ -1,0 +1,46 @@
+.sliderWrapper {
+  background-color: #d1411e;
+}
+
+.container {
+  width: calc(100vw - 100px);
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+
+  .arrowContainer {
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    z-index: 2;
+
+
+    img {
+      max-width: 128px;
+      width: 10vw;
+      opacity: 0.3;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    transition: all 1.5s ease-in-out;
+    position: relative;
+
+    .imgContainer {
+      // width: calc(100vw - 100px);
+      // max-width: 1400px;
+      position: relative;
+
+      img {
+        // width: 100vw;
+        max-width: 1400px;
+      }
+    }
+  }
+}
