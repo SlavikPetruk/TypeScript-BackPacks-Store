@@ -3,9 +3,22 @@ import { Link } from 'react-router-dom'
 import { Search } from './Search'
 import LogoImg from '../assets/logo.png'
 import { selectorCart } from '../redux/slices/cartSlice'
+import { useEffect, useRef } from 'react'
 
 const Header = () => {
-  const { totalPrice, totalCount } = useSelector(selectorCart)
+  const { items, totalPrice, totalCount } = useSelector(selectorCart)
+  const isMounted = useRef(false)
+
+  useEffect(() => {
+    if (isMounted.current) {
+      const localItems = JSON.stringify(items)
+      localStorage.setItem('cart', localItems)
+      // console.log('localItems', localItems)
+      // console.log('items', items)
+    } else {
+      isMounted.current = true
+    }
+  },[items])
 
   return (
     <div className="header">

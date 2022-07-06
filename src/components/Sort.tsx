@@ -1,8 +1,9 @@
-import { FC, useRef } from 'react'
+import React, { FC, useRef } from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { setSortSelect, setSortAscDesc, SortEnum, selectorFilterSortSelect, selectorFilterSortAscDesc } from '../redux/slices/filterSlice'
+import { setSortSelect, setSortAscDesc, selectorFilterSortSelect, selectorFilterSortAscDesc } from '../redux/slices/filterSlice'
+import { SortEnum } from '../redux/slices/filterSliceTypes'
 
 
 type SortListType = {
@@ -16,7 +17,7 @@ export const sortList:SortListType[] = [
   { name: 'алфавіту', sort: SortEnum.TITLE },
 ]
 
-const Sort:FC = () => {
+const Sort:FC = React.memo(() => {
   const dispatch = useDispatch()
   const sortRef = useRef<HTMLDivElement>(null)
   const sortSelect = useSelector(selectorFilterSortSelect)
@@ -83,5 +84,5 @@ const Sort:FC = () => {
       )}
     </div>
   )
-}
+})
 export default Sort

@@ -1,6 +1,7 @@
 import { FC, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { addItem, CartItemType, selectorCartItemById } from '../../redux/slices/cartSlice'
+import { addItem, selectorCartItemById } from '../../redux/slices/cartSlice'
+import { CartItemType } from '../../redux/slices/cartSliceTypes'
 
 export type PizzaBlockProps = {
   id: string

@@ -1,12 +1,11 @@
-import { FC } from "react";
+import React, { FC } from 'react'
 
 type CategoriesProps = {
-  categoryId:  number
+  categoryId: number
   onChangeCategory: (id: number) => void
 }
 
-const Categories:FC<CategoriesProps> = ({categoryId, onChangeCategory}) => {
-
+const Categories: FC<CategoriesProps> = React.memo(({ categoryId, onChangeCategory }) => {
   const categories = [
     { id: 0, title: 'Всі' },
     { id: 1, title: 'Мясні' },
@@ -20,13 +19,16 @@ const Categories:FC<CategoriesProps> = ({categoryId, onChangeCategory}) => {
     <div className="categories">
       <ul>
         {categories.map((li) => (
-          <li key={li.id} 
-              onClick={()=> onChangeCategory(li.id)} 
-              className={categoryId === li.id ? 'active' : ''}>{li.title}</li>
+          <li
+            key={li.id}
+            onClick={() => onChangeCategory(li.id)}
+            className={categoryId === li.id ? 'active' : ''}>
+            {li.title}
+          </li>
         ))}
       </ul>
     </div>
-  );
-};
+  )
+})
 
 export default Categories

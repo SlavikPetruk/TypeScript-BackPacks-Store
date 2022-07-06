@@ -2,26 +2,8 @@ import axios from 'axios'
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { PizzaBlockProps } from '../../components/PizzaBlock/PizzaBlock'
 import { RootState } from '../store'
+import { FetchPizzasProps, IPizzaSlice, StatusEnum } from './pizzaSliceTypes'
 
-
-interface IPizzaSlice {
-  items: PizzaBlockProps[]
-  status: 'LOADING' | 'SUCCESS' | 'ERROR'
-}
-
-type FetchPizzasProps = {
-  categoryId: number
-  sortBy: string
-  sortAscDesc: boolean
-  currentPage: string
-  searchValue: string
-}
-
-export enum StatusEnum {
-  LOADING = 'LOADING',
-  SUCCESS = 'SUCCESS',
-  ERROR = 'ERROR'
-}
 
 export const fetchPizzas = createAsyncThunk<PizzaBlockProps[], FetchPizzasProps>(
   'pizza/fetchPizzasStatus',

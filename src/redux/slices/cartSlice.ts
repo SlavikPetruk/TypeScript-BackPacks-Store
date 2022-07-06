@@ -1,26 +1,15 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { calcTotalCount, calcTotalPrice } from '../../utils/calcTotalPrice&Count'
+import { getCartLocalStorage } from '../../utils/getCartLocalStorage'
 import { RootState } from '../store'
+import { CartItemType, ICartItem } from './cartSliceTypes'
 
-export type CartItemType = {
-  id: string
-  title: string
-  type: string
-  size: number
-  price: number
-  count: number
-  imageUrl: string
-}
-
-interface ICartItem {
-  totalPrice: number
-  totalCount: number
-  items: CartItemType[]
-}
+const cartData = getCartLocalStorage()
 
 const initialState: ICartItem = {
-  items: [],
-  totalPrice: 0,
-  totalCount: 0,
+  items: cartData.items,
+  totalPrice: cartData.totalPrice,
+  totalCount: cartData.totalCount,
 }
 
 export const cartSlice = createSlice({
@@ -38,15 +27,14 @@ export const cartSlice = createSlice({
         })
       }
 
-      state.totalPrice = state.items.reduce((sum, obj) => obj.price * obj.count + sum, 0)
-
-      state.totalCount = state.items.reduce((sum, obj) => obj.count + sum, 0)
+      state.totalPrice = calcTotalPrice(state.items)
+      state.totalCount = calcTotalCount(state.items)
     },
 
     minusItem(state, action: PayloadAction<string>) {
       const findItem = state.items.find((obj) => obj.id === action.payload)
     
-        if (findItem) {
+        if (findItem && findItem.count > 1) {
           findItem.count--
         }
       

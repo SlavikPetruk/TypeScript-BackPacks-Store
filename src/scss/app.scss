@@ -141,6 +141,19 @@ body {
     align-items: center;
   }
 
+  .button__disabled {
+    opacity: 0.4;
+    border-color: #8d8d8d;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    svg path {
+      fill: #8d8d8d;
+    }
+  }
+
   .content__title {
     display: flex;
     align-items: center;
@@ -419,4 +432,15 @@ body {
       font-size: 18px;
     }
   }
+}
+
+.titlePlusSort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content__top {
+  display: flex;
+  justify-content: center;
 }
