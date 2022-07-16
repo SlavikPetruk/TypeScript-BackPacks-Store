@@ -23,8 +23,6 @@ const Sort:FC = React.memo(() => {
   const sortSelect = useSelector(selectorFilterSortSelect)
   const sortAscDesc = useSelector(selectorFilterSortAscDesc)
 
-  console.log('sortSelect', sortSelect)
-
   const [open, setOpen] = useState(false)
 
   const onClickListItem = (obj:any) => {

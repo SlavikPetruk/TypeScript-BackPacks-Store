@@ -2,15 +2,16 @@ import { useState } from 'react'
 import styles from './Featured.module.scss'
 import left from '../../assets/slider/arrow-left.png'
 import right from '../../assets/slider/arrow-right.png'
+import { Link } from 'react-router-dom'
 
 const Featured = () => {
   const [index, setIndex] = useState(0)
   const images = [
-    '/img/slide/1.jpg',
-    '/img/slide/2.jpg',
-    '/img/slide/3.jpg',
-    '/img/slide/4.jpg',
-    '/img/slide/5.jpg',
+    { img: '/img/slide/1.jpg', url: 'backpack/5' },
+    { img: '/img/slide/2.jpg', url: 'backpack/6' },
+    { img: '/img/slide/3.jpg', url: 'backpack/7' },
+    { img: '/img/slide/4.jpg', url: 'backpack/8' },
+    { img: '/img/slide/5.jpg', url: 'backpack/9' },
   ]
 
   const slideImg = (dir) => {
@@ -28,14 +29,17 @@ const Featured = () => {
         <div className={styles.arrowContainer} style={{ left: 0 }} onClick={() => slideImg('l')}>
           <img src={left} alt="left" />
         </div>
-        <div className={styles.wrapper} style={{ transform: `translateX(${-91 * index}vw)` }}>
-          {images.map((img, i) => (
+        <div className={styles.wrapper} style={{ transform: `translateX(${-1000 * index}px)` }}>
+          {images.map((item, i) => (
             <div className={styles.imgContainer} key={i}>
-              <img src={img} alt="img" layout="fill" object-fit='contain' />
+              <Link to={item.url}>
+                <button className={styles.btnSlide}>Переглянути</button>
+              </Link>
+              <img src={item.img} alt="img" layout="fill" object-fit="contain" />
             </div>
           ))}
         </div>
-        <div className={styles.arrowContainer} style={{ right: 0 }} onClick={() => slideImg('r')}>
+        <div className={styles.arrowContainer} style={{ right: 30 }} onClick={() => slideImg('r')}>
           <img src={right} alt="right" />
         </div>
       </div>

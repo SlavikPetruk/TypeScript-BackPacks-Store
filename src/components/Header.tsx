@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Search } from './Search'
 import LogoImg from '../assets/logo.png'
 import { selectorCart } from '../redux/slices/cartSlice'
@@ -8,13 +8,12 @@ import { useEffect, useRef } from 'react'
 const Header = () => {
   const { items, totalPrice, totalCount } = useSelector(selectorCart)
   const isMounted = useRef(false)
+  const location = useLocation()
 
   useEffect(() => {
     if (isMounted.current) {
       const localItems = JSON.stringify(items)
       localStorage.setItem('cart', localItems)
-      // console.log('localItems', localItems)
-      // console.log('items', items)
     } else {
       isMounted.current = true
     }
@@ -25,14 +24,14 @@ const Header = () => {
       <div className="container">
         <Link to="/">
           <div className="header__logo">
-            <img width="64" src={LogoImg} alt="Pizza logo" />
+            <img width="64" src={LogoImg} alt="BackPack logo" />
             <div>
-              <h1>React Pizza</h1>
-              <p>найсмачніша піца у всесвіті</p>
+              <h1>Best Backpacks</h1>
+              <p>Вперед за горизонти!</p>
             </div>
           </div>
         </Link>
-        <Search />
+        {location.pathname === '/' && <Search />}
         <div className="header__cart">
           <Link to="/cart" className="button button--cart">
             <span>{totalPrice} ₴</span>

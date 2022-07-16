@@ -1,7 +1,8 @@
 @import '../variables';
 
 .header {
-  border-bottom: 1px solid $gray-line;
+  border-bottom: 1px solid #324a28;
+  background-color: $main;
   padding: 40px 0;
 
   .container {
@@ -26,7 +27,7 @@
     }
 
     h1 {
-      color: #181818;
+      color: $orange;
       font-size: 24px;
       letter-spacing: 1%;
       text-transform: uppercase;

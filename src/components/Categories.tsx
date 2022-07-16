@@ -4,16 +4,17 @@ type CategoriesProps = {
   categoryId: number
   onChangeCategory: (id: number) => void
 }
+export const categories = [
+    { id: 0, title: 'Всі рюкзаки' },
+    { id: 1, title: 'Подорожі' },
+    { id: 2, title: 'Міські' },
+    { id: 3, title: 'Велорюкзаки' },
+    { id: 4, title: 'Climbing' },
+    { id: 5, title: 'Зимові' },
+  ]
 
 const Categories: FC<CategoriesProps> = React.memo(({ categoryId, onChangeCategory }) => {
-  const categories = [
-    { id: 0, title: 'Всі' },
-    { id: 1, title: 'Мясні' },
-    { id: 2, title: 'Вегетаріанскі' },
-    { id: 3, title: 'Гриль' },
-    { id: 4, title: 'Гострі' },
-    { id: 5, title: 'Закриті' },
-  ]
+
 
   return (
     <div className="categories">

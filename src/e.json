@@ -1,8 +1,8 @@
 [
   {
    "id": "0",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg",
-   "title": "Пепероні Фреш з перцем",
+   "imageUrl": "/img/packs/0.jpg",
+   "title": "Osprey Talon Earth 22",
    "types": [
     0,
     1
@@ -12,14 +12,14 @@
     30,
     40
    ],
-   "price": 240,
+   "price": 4307,
    "category": 1,
    "rating": 4
   },
   {
    "id": "1",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/2ffc31bb-132c-4c99-b894-53f7107a1441.jpg",
-   "title": "Сирна",
+   "imageUrl": "/img/packs/1.jpg",
+   "title": "Osprey Atmos AG 50",
    "types": [
     0
    ],
@@ -27,14 +27,14 @@
     26,
     40
    ],
-   "price": 155,
+   "price": 2288,
    "category": 3,
    "rating": 6
   },
   {
    "id": "2",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/6652fec1-04df-49d8-8744-232f1032c44b.jpg",
-   "title": "Курча барбекю",
+   "imageUrl": "/img/packs/2.jpg",
+   "title": "Deuter Speed Lite",
    "types": [
     0
    ],
@@ -42,14 +42,14 @@
     26,
     40
    ],
-   "price": 130,
+   "price": 2508,
    "category": 1,
    "rating": 4
   },
   {
    "id": "3",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/af553bf5-3887-4501-b88e-8f0f55229429.jpg",
-   "title": "Кисло-солодке курча",
+   "imageUrl": "/img/packs/3.jpg",
+   "title": "Deuter Guide 40+ SL",
    "types": [
     1
    ],
@@ -58,14 +58,14 @@
     30,
     40
    ],
-   "price": 125,
+   "price": 5358,
    "category": 2,
    "rating": 2
   },
   {
    "id": "4",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
-   "title": "Чизбургер-піца",
+   "imageUrl": "/img/packs/4.jpg",
+   "title": "Osprey Siskin 12",
    "types": [
     0,
     1
@@ -75,14 +75,14 @@
     30,
     40
    ],
-   "price": 180,
+   "price": 3625,
    "category": 3,
    "rating": 8
   },
   {
    "id": "5",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/1e1a6e80-b3ba-4a44-b6b9-beae5b1fbf27.jpg",
-   "title": "Крейзі пепероні",
+   "imageUrl": "/img/packs/5.jpg",
+   "title": "Pinguin Explorer 60",
    "types": [
     0
    ],
@@ -90,14 +90,14 @@
     30,
     40
    ],
-   "price": 210,
+   "price": 6862,
    "category": 2,
    "rating": 2
   },
   {
    "id": "6",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/d2e337e9-e07a-4199-9cc1-501cc44cb8f8.jpg",
-   "title": "Пепероні",
+   "imageUrl": "/img/packs/6.jpg",
+   "title": "Kelty Ruckus Roll Top",
    "types": [
     0,
     1
@@ -107,14 +107,14 @@
     30,
     40
    ],
-   "price": 220,
+   "price": 2688,
    "category": 1,
    "rating": 9
   },
   {
    "id": "7",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/d48003cd-902c-420d-9f28-92d9dc5f73b4.jpg",
-   "title": "Маргарита",
+   "imageUrl": "/img/packs/7.jpg",
+   "title": "Ortovox Traverse Dry",
    "types": [
     0,
     1
@@ -124,14 +124,14 @@
     30,
     40
    ],
-   "price": 180,
+   "price": 5382,
    "category": 4,
    "rating": 10
   },
   {
    "id": "8",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/ec29465e-606b-4a04-a03e-da3940d37e0e.jpg",
-   "title": "Чотири сезони",
+   "imageUrl": "/img/packs/8.jpg",
+   "title": "Osprey Ultralight Stuff Pack",
    "types": [
     0,
     1
@@ -141,14 +141,14 @@
     30,
     40
    ],
-   "price": 165,
+   "price": 1315,
    "category": 5,
    "rating": 10
   },
   {
    "id": "9",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/30367198-f3bd-44ed-9314-6f717960da07.jpg",
-   "title": "Аманте",
+   "imageUrl": "/img/packs/9.jpg",
+   "title": "Exped Skyline 25",
    "types": [
     0,
     1
@@ -158,31 +158,31 @@
     30,
     40
    ],
-   "price": 140,
+   "price": 5345,
    "category": 2,
    "rating": 7
   },
   {
    "id": "10",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg",
-   "title": "Пепероні Фреш з перцем",
+   "imageUrl": "/img/packs/10.jpg",
+   "title": "Sierra Designs Flex Capacitor ",
    "types": [
     0,
     1
    ],
    "sizes": [
-    26,
+    
     30,
     40
    ],
-   "price": 142,
+   "price": 7700,
    "category": 4,
    "rating": 4
   },
   {
    "id": "11",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/2ffc31bb-132c-4c99-b894-53f7107a1441.jpg",
-   "title": "Кватро Формаджі",
+   "imageUrl": "/img/packs/11.jpg",
+   "title": "Fram Lukla 38",
    "types": [
     0
    ],
@@ -190,14 +190,14 @@
     26,
     40
    ],
-   "price": 255,
+   "price": 3850,
    "category": 7,
    "rating": 6
   },
   {
    "id": "12",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/6652fec1-04df-49d8-8744-232f1032c44b.jpg",
-   "title": "Кватро Формаджі",
+   "imageUrl": "/img/packs/12.jpg",
+   "title": "Gregory Baltoro",
    "types": [
     0
    ],
@@ -205,14 +205,14 @@
     26,
     40
    ],
-   "price": 190,
+   "price": 14218,
    "category": 6,
    "rating": 4
   },
   {
    "id": "13",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/af553bf5-3887-4501-b88e-8f0f55229429.jpg",
-   "title": "Цезаре",
+   "imageUrl": "/img/packs/13.jpg",
+   "title": "Kelty Zyro 54 W",
    "types": [
     1
    ],
@@ -221,14 +221,14 @@
     30,
     40
    ],
-   "price": 125,
+   "price": 8715,
    "category": 2,
    "rating": 2
   },
   {
    "id": "14",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
-   "title": "Гавайська ",
+   "imageUrl": "/img/packs/14.jpg",
+   "title": "Kilpi Kerou-U",
    "types": [
     0,
     1
@@ -238,14 +238,14 @@
     30,
     40
    ],
-   "price": 180,
+   "price": 2345,
    "category": 3,
    "rating": 8
   },
   {
    "id": "15",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/1e1a6e80-b3ba-4a44-b6b9-beae5b1fbf27.jpg",
-   "title": "Баварська",
+   "imageUrl": "/img/packs/15.jpg",
+   "title": "Kelty Redtail 27",
    "types": [
     0
    ],
@@ -253,14 +253,14 @@
     30,
     40
    ],
-   "price": 310,
+   "price": 2465,
    "category": 5,
    "rating": 2
   },
   {
    "id": "16",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/d2e337e9-e07a-4199-9cc1-501cc44cb8f8.jpg",
-   "title": "Соренто",
+   "imageUrl": "/img/packs/16.jpg",
+   "title": "Osprey Apogee",
    "types": [
     0,
     1
@@ -270,14 +270,14 @@
     30,
     40
    ],
-   "price": 202,
+   "price": 3455,
    "category": 2,
    "rating": 9
   },
   {
    "id": "17",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/d48003cd-902c-420d-9f28-92d9dc5f73b4.jpg",
-   "title": "Гофредо",
+   "imageUrl": "/img/packs/17.jpg",
+   "title": "Kelty Zyp 48",
    "types": [
     0,
     1
@@ -287,14 +287,14 @@
     30,
     40
    ],
-   "price": 210,
+   "price": 7700,
    "category": 7,
    "rating": 10
   },
   {
    "id": "18",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/ec29465e-606b-4a04-a03e-da3940d37e0e.jpg",
-   "title": "Поло Американо",
+   "imageUrl": "/img/packs/18.jpg",
+   "title": "Osprey Daylite Plus",
    "types": [
     0,
     1
@@ -304,14 +304,14 @@
     30,
     40
    ],
-   "price": 265,
+   "price": 2365,
    "category": 3,
    "rating": 10
   },
   {
    "id": "19",
-   "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/30367198-f3bd-44ed-9314-6f717960da07.jpg",
-   "title": "Песто і томато",
+   "imageUrl": "/img/packs/19.jpg",
+   "title": "Salewa Alptrek BPо",
    "types": [
     0,
     1
@@ -321,7 +321,24 @@
     30,
     40
    ],
-   "price": 175,
+   "price": 7585,
+   "category": 7,
+   "rating": 8
+  },
+  {
+   "id": "20",
+   "imageUrl": "/img/packs/20.jpg",
+   "title": "Salewa Firepad 16",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 2635,
    "category": 7,
    "rating": 8
   }

@@ -1,0 +1,84 @@
+@import '../variables';
+
+.backpackPage-block-wrapper {
+  max-width: 920px;
+  display: block;
+  margin: auto;
+
+  .backpackPage-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-bottom: 65px;
+    transition: all 0.2s ease-in-out;
+
+    &__image {
+      max-width: 360px;
+      margin: 40px;
+      grid-area: 1 / 1 / 5 / 2;
+    }
+
+    &__title {
+      color: $main;
+      font-weight: 900;
+      letter-spacing: 1%;
+      margin-bottom: 20px;
+      grid-area: 1 / 2 / 2 / 3;
+    }
+
+    &__desc {
+      grid-area: 1 / 2 / 3 / 3;
+    }
+
+    &__selector {
+      display: flex;
+      max-width: 300px;
+      background-color: #f3f3f3;
+      border-radius: 10px;
+      flex-direction: column;
+      padding: 6px 30px;
+      grid-area: 3 / 2 / 4 / 3;
+
+      ul {
+        display: flex;
+        flex: 1;
+
+        &:first-of-type {
+          margin-bottom: 6px;
+        }
+
+        li {
+          padding: 8px;
+          flex: 1;
+          cursor: pointer;
+          font-weight: 600;
+          font-size: 14px;
+          @include noselect();
+
+          &.active {
+            background: #ffffff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+            border-radius: 5px;
+            cursor: auto;
+          }
+        }
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      margin-top: 50px;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+      grid-area: 4 / 2 / 5 / 3;
+
+      .backpackPage-block__price {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 27px;
+        letter-spacing: 0.015em;
+      }
+    }
+  }
+}

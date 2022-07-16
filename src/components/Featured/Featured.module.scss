@@ -1,13 +1,16 @@
+@import '../../scss/variables';
+
 .sliderWrapper {
-  background-color: #d1411e;
+  background-color: $main;
 }
 
 .container {
   width: calc(100vw - 100px);
-  max-width: 1400px;
+  max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
+  
 
   .arrowContainer {
     position: absolute;
@@ -32,15 +35,24 @@
     transition: all 1.5s ease-in-out;
     position: relative;
 
-    .imgContainer {
-      // width: calc(100vw - 100px);
-      // max-width: 1400px;
-      position: relative;
+    .btnSlide {
+      background-color: $orange ;
+      border-radius: 4px;
+      border: none;
+      position: absolute;
+      top: 70%;
+      left: 15%;
+      padding: 10px 15px;
+      font-size: 15px;
+      font-weight: 700;
+      color: $black;
+      cursor: pointer;
+    }
 
-      img {
-        // width: 100vw;
-        max-width: 1400px;
-      }
+    .imgContainer {
+      position: relative;
     }
   }
 }
+
+

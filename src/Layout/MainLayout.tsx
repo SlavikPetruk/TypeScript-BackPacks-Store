@@ -1,13 +1,15 @@
 import { FC } from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 import Featured from '../components/Featured'
 import Header from '../components/Header'
 
-const MainLayout:FC = () => {
+const MainLayout:FC = () => {  
+  const location = useLocation();
+
   return (
     <div className="wrapper">
       <Header />
-      <Featured />
+      {location.pathname === '/' && <Featured />}
       <div className="content">
         <Outlet />
       </div>

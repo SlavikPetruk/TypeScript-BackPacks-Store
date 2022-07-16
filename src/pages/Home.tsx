@@ -1,17 +1,18 @@
 import qs from 'qs'
 import { FC, useCallback, useEffect } from 'react'
-import Categories from '../components/Categories'
+import Categories, { categories } from '../components/Categories'
 import { Pagination } from '../components/Pagination'
-import PizzaBlock from '../components/PizzaBlock/PizzaBlock'
-import { Skeleton } from '../components/PizzaBlock/Skeleton'
+import BackPackBlock from '../components/BackPackBlock/BackPackBlock'
+import { Skeleton } from '../components/BackPackBlock/Skeleton'
 import Sort, { sortList } from '../components/Sort'
 import notFound from '../assets/nodata-found.png'
 
+
 import { useSelector } from 'react-redux'
 import { selectorFilter, setCategoryId, setCurrentPage, setUrl } from '../redux/slices/filterSlice'
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { useRef } from 'react'
-import { fetchPizzas, selectorPizza } from '../redux/slices/pizzaSlice'
+import { fetchBackPacks, selectorBackPack } from '../redux/slices/backpackSlice'
 import { useAppDispatch } from '../redux/store'
 
 const Home: FC = () => {
@@ -20,16 +21,20 @@ const Home: FC = () => {
   const isSearch = useRef(false) //перевірка на запит
   const isMouned = useRef(false) //перевірка на перший рендер
 
-  const { items, status } = useSelector(selectorPizza)
+  const { items, status } = useSelector(selectorBackPack)
   const { categoryId, sortSelect, sortAscDesc, currentPage, searchValue } =
     useSelector(selectorFilter)
 
-  // response data
+
+  // якщо був перший рендер, запрошуєм дані
+  useEffect(() => {
+    // window.scrollTo(0, 700)
+      // response data
   const dataResponse = () => {
     const sortBy = sortSelect.sort
 
     dispatch(
-      fetchPizzas({
+      fetchBackPacks({
         categoryId,
         sortBy,
         sortAscDesc,
@@ -38,10 +43,6 @@ const Home: FC = () => {
       }),
     )
   }
-
-  // якщо був перший рендер, запрошуєм дані
-  useEffect(() => {
-    // window.scrollTo(0, 700)
 
     if (!isSearch.current) {
       dataResponse()
@@ -77,6 +78,7 @@ const Home: FC = () => {
     dispatch(setCategoryId(id))
   }, [])
 
+
   return (
     <>
       <div className="container">
@@ -84,7 +86,8 @@ const Home: FC = () => {
           <Categories categoryId={categoryId} onChangeCategory={onChangeCategory} />
         </div>
         <div className="titlePlusSort">
-          <h2 className="content__title">Все пиццы</h2>
+        <h2 className="content__title">{categories[categoryId].title}</h2>
+          
           <Sort />
         </div>
         {status === 'ERROR' || items.length < 1 ? (
@@ -94,9 +97,9 @@ const Home: FC = () => {
             {status === 'LOADING'
               ? [...new Array(6)].map((_, i) => <Skeleton key={i} />)
               : items.map((obj: any) => (
-                  <Link key={obj.id} to={`/pizza/${obj.id}`}>
-                    <PizzaBlock {...obj} />
-                  </Link>
+                  
+                    <BackPackBlock key={obj.id} {...obj} />
+                  
                 ))}
           </div>
         )}
